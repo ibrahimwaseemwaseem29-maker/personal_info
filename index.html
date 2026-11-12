@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ibraheem Waseem - Web Developer Portfolio">
+  <meta name="theme-color" content="#0b0b12">
+  <meta name="keywords" content="Ibraheem Waseem, Web Developer, PHP, MySQL, HTML, CSS, JavaScript, Karachi">
+  <title>Ibraheem Waseem | Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="intro-loader" id="introLoader" aria-label="Loading portfolio">
+    <div class="loader-mark">IW<span>.</span></div>
+    <div class="loader-track"><span></span></div>
+    <p>INITIALIZING PORTFOLIO</p>
+  </div>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="ambient-vignette" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <header class="header">
+    <a href="#home" class="logo">IBRAHEEM<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-controls="navbar"
+      aria-expanded="false">☰</button>
+
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#contact" class="nav-cta">Hire Me ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="purple-text">WEB DEVELOPER</p>
+        <h1><small>Hi, I'm</small>Ibraheem <span>Waseem</span></h1>
+        <h2>I build <span class="typed-role" id="typedRole">modern websites</span><span class="typing-cursor">|</span></h2>
+        <p class="hero-description">
+          I'm an aspiring web developer from Karachi, Pakistan, currently studying Web Development at Aptech. I build responsive websites and web applications using HTML, CSS, Bootstrap, JavaScript, PHP and MySQL. I enjoy learning new technologies and turning ideas into useful digital experiences.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/ibrahimwaseemwaseem29-maker" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com/in/ibraheem-waseem" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">in</a>
+          <a href="mailto:ibrahimwaseemwaseem29@gmail.com" aria-label="Email">✉</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="orb">
+          <div class="orb-ring"></div>
+          <div class="orb-core"><span><img class="radius" src="ibraheem.jpeg" alt="Portrait of Ibraheem Waseem"></span></div>
+          <span class="orb-chip chip-html">&lt;html/&gt;</span>
+          <span class="orb-chip chip-php">php</span>
+          <span class="orb-chip chip-css">{ css }</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="purple-text">ABOUT ME</p>
+          <h2>I'm Ibraheem <span>Waseem</span></h2>
+          <p class="about-lead">
+            I'm an Aptech Web Development student and aspiring web developer based in Karachi, Pakistan. I enjoy creating responsive websites, building PHP and MySQL projects, and improving my skills through practical work. My goal is to grow into a professional developer and create helpful digital solutions for real clients.
+          </p>
+
+          <div class="facts">
+            <div class="fact-item">
+              <span class="fact-label">Location</span>
+              <span class="fact-value">Karachi, Pakistan</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Education</span>
+              <span class="fact-value">Aptech — Web Development Diploma<br>(3-year program, currently studying)</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Certification</span>
+              <span class="fact-value">CIT — Innovative Institute (Completed)</span>
+            </div>
+          </div>
+
+          <a href="ibraheem-cv.pdf" download class="btn btn-primary download-btn">Download CV</a>
+        </div>
+
+        <div class="about-code reveal" aria-label="A short code introduction">
+          <span class="code-comment">// ibraheem.js</span><br>
+          <span class="code-keyword">const</span> developer = {<br>
+          &nbsp;&nbsp;name: <span class="code-string">"Ibraheem Waseem"</span>,<br>
+          &nbsp;&nbsp;city: <span class="code-string">"Karachi"</span>,<br>
+          &nbsp;&nbsp;stack: [<span class="code-string">"PHP"</span>, <span class="code-string">"MySQL"</span>, <span
+            class="code-string">"JS"</span>],<br>
+          &nbsp;&nbsp;learning: <span class="code-keyword">true</span><br>
+          };
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHAT I WORK WITH</p>
+        <h2>My <span>Skills</span></h2>
+        <p>Technologies I'm learning and using in my projects.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal"><span class="skill-symbol html">5</span>
+          <h3>HTML5</h3>
+          <p>Web Structure</p>
+        </div>
+        <div class="skill-card reveal"><span class="skill-symbol css">3</span>
+          <h3>CSS3</h3>
+          <p>Design & Layout</p>
+        </div>
+        <div class="skill-card reveal"><span class="skill-symbol bootstrap">B</span>
+          <h3>Bootstrap</h3>
+          <p>Responsive UI</p>
+        </div>
+        <div class="skill-card reveal"><span class="skill-symbol js">JS</span>
+          <h3>JavaScript</h3>
+          <p>Interactivity</p>
+        </div>
+        <div class="skill-card reveal"><span class="skill-symbol php">PHP</span>
+          <h3>PHP</h3>
+          <p>Backend Development</p>
+        </div>
+        <div class="skill-card reveal"><span class="skill-symbol mysql">DB</span>
+          <h3>MySQL</h3>
+          <p>Database Management</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY RECENT WORK</p>
+        <h2>Featured <span>Projects</span></h2>
+        <p>A selection of my website projects and practice work.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-preview preview-smartmart">
+            <span class="preview-label">01 / E-COMMERCE</span>
+            <div class="preview-art">SMART<span>MART.</span></div>
+            <p>Everything you need, in one place.</p>
+          </div>
+          <div class="project-info">
+            <h3>SmartMart</h3>
+            <p>A multi-category online store concept for electronics, clothing and more.</p>
+            <div class="tech-list"><span>PHP</span><span>MySQL</span><span>CSS</span></div>
+            <a href="#contact" class="project-link">Ask About Project ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-aisha">
+            <span class="preview-label">02 / ONLINE STORE</span>
+            <div class="preview-art">AISHA<br><span>COLLECTION</span></div>
+            <p>Style that feels like you.</p>
+          </div>
+          <div class="project-info">
+            <h3>Aisha Collection</h3>
+            <p>An online store concept for fashion, clothes and cosmetics.</p>
+            <div class="tech-list"><span>HTML</span><span>CSS</span><span>PHP</span></div>
+            <a href="#contact" class="project-link">Ask About Project ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-estate">
+            <span class="preview-label">03 / REAL ESTATE</span>
+            <div class="preview-art">FIND YOUR<br><span>PLACE.</span></div>
+            <p>Discover a place to call home.</p>
+          </div>
+          <div class="project-info">
+            <h3>Real Estate Website</h3>
+            <p>A property website concept with listings and property details.</p>
+            <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="#contact" class="project-link">Ask About Project ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-sound">
+            <span class="preview-label">04 / ENTERTAINMENT</span>
+            <div class="preview-art">SOUND<span>.</span></div>
+            <p>Music. Stories. Entertainment.</p>
+          </div>
+          <div class="project-info">
+            <h3>SOUND Entertainment</h3>
+            <p>A music and video platform concept with categories and media listings.</p>
+            <div class="tech-list"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+            <a href="#contact" class="project-link">Ask About Project ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-motors">
+            <span class="preview-label">05 / AUTOMOTIVE</span>
+            <div class="preview-art">ELITE<br><span>MOTORS.</span></div>
+            <p>Find your next drive.</p>
+          </div>
+          <div class="project-info">
+            <h3>Elite Motors</h3>
+            <p>A car dealership website concept for showcasing vehicles.</p>
+            <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="#contact" class="project-link">Ask About Project ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-school">
+            <span class="preview-label">06 / MANAGEMENT</span>
+            <div class="preview-art">SCHOOL<br><span>MANAGEMENT.</span></div>
+            <p>Organized. Simple. Efficient.</p>
+          </div>
+          <div class="project-info">
+            <h3>School Management</h3>
+            <p>A school management concept for organizing student and school records.</p>
+            <div class="tech-list"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+            <a href="#contact" class="project-link">Ask About Project ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-nexus">
+            <span class="preview-label">07 / AI ASSISTANT</span>
+            <div class="preview-art">NEXUS<span> AI.</span></div>
+            <p>A personal assistant project</p>
+          </div>
+          <div class="project-info">
+            <h3>NEXUS AI</h3>
+            <p>A personal AI assistant project with a web chat interface and productivity features.</p>
+            <div class="tech-list"><span>PHP</span><span>JavaScript</span><span>MySQL</span></div>
+            <a href="https://nexus1.gt.tc/" class="project-link">Ask About Project ↗</a>
+          </div>
+        </article>
+
+<article class="project-card reveal">
+    <div class="project-preview preview-watch">
+        <span class="preview-label">08 / WATCH STORE</span>
+
+        <div class="preview-art">
+            AURA<span> WATCH</span>
+        </div>
+
+        <p>A PREMIUM WATCH COLLECTION</p>
+    </div>
+
+    <div class="project-info">
+        <h3>AURA WATCH</h3>
+
+        <p>
+            A modern online watch store featuring elegant
+            watch collections, premium designs and a smooth
+            shopping experience.
+        </p>
+
+        <div class="tech-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+
+        <a href="https://ibrahimwaseemwaseem29-maker.github.io/aurawatch/"
+           target="_blank"
+           class="project-link">
+            View Live Project ↗
+        </a>
+    </div>
+</article>
+
+      </div>
+      <p class="project-note">Some entries are project concepts or works in progress. Ask me for current demos and project details.</p>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY LEARNING JOURNEY</p>
+        <h2>Education &amp; <span>Training</span></h2>
+        <p>My current studies and completed foundation training.</p>
+      </div>
+      <div class="education-list">
+        <article class="education-card reveal">
+          <span class="education-dot"></span>
+          <div><p class="education-date">CURRENTLY STUDYING</p><h3>Aptech — Web Development</h3><p>Three-year diploma program; currently progressing through the first year.</p></div>
+        </article>
+        <article class="education-card reveal">
+          <span class="education-dot"></span>
+          <div><p class="education-date">COMPLETED</p><h3>Innovative Institute — Certificate in Information Technology (CIT)</h3><p>Completed foundational training in Information Technology.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Let's Build Something <span>Great.</span></h2>
+        <p>Have a project or opportunity? Send me a message.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Contact Information</h3>
+          <p>I'm interested in web development opportunities and freelance projects.</p>
+          <a href="mailto:ibrahimwaseemwaseem29@gmail.com" class="contact-item">
+            <span>✉</span>
+            <div><small>Email</small><strong>ibrahimwaseemwaseem29@gmail.com</strong></div>
+          </a>
+          <div class="contact-item">
+            <span>⌖</span>
+            <div><small>Location</small><strong>Karachi, Pakistan</strong></div>
+          </div>
+          <a href="https://github.com/ibraheemwaseem" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span>⌘</span>
+            <div><small>GitHub</small><strong>Explore my repositories ↗</strong></div>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+            required></textarea>
+
+          <button type="submit" class="btn btn-primary submit-btn">Send on WhatsApp ↗</button>
+          <p class="form-note" id="formNote">WhatsApp will open with your message ready. Press Send there to deliver it.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">IBRAHEEM<span>.</span></a>
+    <p>Designed & built by Ibraheem Waseem · <span id="year"></span></p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script src="cinematic.js" defer></script>
+</body>
+
+</html>
